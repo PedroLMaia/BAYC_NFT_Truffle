@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "name": "Ape #150",
+    "picture": "images/1.png",
+    "age": 3,
+    "breed": "#150",
+    "location": "Lisco, Alabama"
+  },
+  {
+    "id": 1,
+    "name": "Ape #151",
+    "picture": "images/2.png",
+    "age": 3,
+    "breed": "#151",
+    "location": "Tooleville, West Virginia"
+  },
+  {
+    "id": 2,
+    "name": "Ape #152",
+    "picture": "images/3.png",
+    "age": 2,
+    "breed": "#152",
+    "location": "Freeburn, Idaho"
+  },
+  {
+    "id": 3,
+    "name": "Ape #153",
+    "picture": "images/4.png",
+    "age": 2,
+    "breed": "#153",
+    "location": "Camas, Pennsylvania"
+  },
+  {
+    "id": 4,
+    "name": "Ape #154",
+    "picture": "images/5.png",
+    "age": 2,
+    "breed": "#154",
+    "location": "Gerber, South Dakota"
+  },
+  {
+    "id": 5,
+    "name": "Ape #155",
+    "picture": "images/6.png",
+    "age": 3,
+    "breed": "#155",
+    "location": "Innsbrook, Illinois"
+  },
+  {
+    "id": 6,
+    "name": "Ape #156",
+    "picture": "images/7.png",
+    "age": 3,
+    "breed": "#156",
+    "location": "Soudan, Louisiana"
+  },
+  {
+    "id": 7,
+    "name": "Ape #157",
+    "picture": "images/8.png",
+    "age": 3,
+    "breed": "#157",
+    "location": "Jacksonwald, Palau"
+  },
+  {
+    "id": 8,
+    "name": "Ape #158",
+    "picture": "images/9.png",
+    "age": 2,
+    "breed": "#158",
+    "location": "Honolulu, Hawaii"
+  },
+  {
+    "id": 9,
+    "name": "Ape #159",
+    "picture": "images/10.png",
+    "age": 3,
+    "breed": "#159",
+    "location": "Matheny, Utah"
+  },
+  {
+    "id": 10,
+    "name": "Ape #160",
+    "picture": "images/11.png",
+    "age": 2,
+    "breed": "#160",
+    "location": "Tyhee, Indiana"
+  },
+  {
+    "id": 11,
+    "name": "Ape #161",
+    "picture": "images/12.png",
+    "age": 3,
+    "breed": "#161",
+    "location": "Windsor, Montana"
+  },
+  {
+    "id": 12,
+    "name": "Ape #162",
+    "picture": "images/13.png",
+    "age": 3,
+    "breed": "#162",
+    "location": "Kingstowne, Nevada"
+  },
+  {
+    "id": 13,
+    "name": "Ape #163",
+    "picture": "images/14.png",
+    "age": 4,
+    "breed": "#163",
+    "location": "Sultana, Massachusetts"
+  },
+  {
+    "id": 14,
+    "name": "Ape #164",
+    "picture": "images/15.png",
+    "age": 2,
+    "breed": "#164",
+    "location": "Broadlands, Oregon"
+  },
+  {
+    "id": 15,
+    "name": "Ape #165",
+    "picture": "images/16.png",
+    "age": 2,
+    "breed": "#165",
+    "location": "Dawn, Wisconsin"
+  }
+]

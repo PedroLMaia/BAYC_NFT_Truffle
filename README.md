@@ -1,6 +1,6 @@
 # BAYC NFT Truffle
 
-Instalar ganache.
+Instalar ganache e Metamask.
 
 ```
 npm install -g truffle

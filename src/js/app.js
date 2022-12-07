@@ -87,7 +87,7 @@ web3 = new Web3(App.web3Provider);
       var account = accounts[0];
       App.contracts.Adoption.deployed().then(function(instance) {
         adoptionInstance = instance;
-        return adoptionInstance.adopt(petId, { value:web3.toWei(2.5, 'ether'), from: account });
+        return adoptionInstance.adopt(petId, { value:web3.toWei(5.5, 'ether'), from: account });
       }).then(function(result) {
         return App.markAdopted();
       }).catch(function(err) {

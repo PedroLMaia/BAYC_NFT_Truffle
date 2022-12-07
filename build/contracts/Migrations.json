@@ -53,7 +53,7 @@
   "sourceMap": "66:352:1:-;;;113:10;90:33;;;;;;;;;;;;;;;;;;;;66:352;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:1;;;;;;;",
   "deployedSourceMap": "66:352:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;313:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;313:103:1;;;;;;;;;;;;;;;;;:::i;:::-;;127:36;;;;:::o;90:33::-;;;;;;;;;;;;;:::o;313:103::-;225:5;;;;;;;;;;;211:19;;:10;:19;;;196:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:9;375:24;:36;;;;313:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "C:\\Users\\Pedro\\Desktop\\Final\\BAYC_NFT_Truffle\\contracts\\Migrations.sol",
+  "sourcePath": "/Users/pedro/Desktop/Pasta Sem Título/BAYC_NFT_Truffle/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -915,12 +915,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xb08A09CEE5Fe7d43fFd0FA121Ce0Ea4c26c51F4e",
-      "transactionHash": "0x8c64e6ecdbf92e6fb7e67758f77ac7570498fb5ccf47756022e93d9dc8fb9059"
+      "address": "0x02660d1f984E2AA5114aE94BC78aC638e82209d8",
+      "transactionHash": "0x8f0eb48c481768f782ff593af1c74de37fd677a30d3e9890bb91d6e7bdf41c11"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2022-12-07T17:38:40.807Z",
+  "updatedAt": "2022-12-07T20:11:23.206Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

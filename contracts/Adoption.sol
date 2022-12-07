@@ -18,7 +18,7 @@ contract Adoption {
         //Requer o id do Ape no range de 0 - 15.
         require(petId >= 0 && petId <= 15);
         //Requer um valor de ether para comprar o Ape.
-        require(msg.value==5.5 ether);
+        require(msg.value > 0 ether);
         //O endereco do comprado vai ser atrelado a venda daquele Ape.
         comprador[petId] = msg.sender;
         //O vendedor recebera o seu dionheiro.

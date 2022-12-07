@@ -3,7 +3,6 @@ App = {
   contracts: {},
 
   init: async function() {
-    // Load pets.
     $.getJSON('../pets.json', function(data) {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
@@ -11,10 +10,9 @@ App = {
       for (i = 0; i < data.length; i ++) {
         petTemplate.find('.panel-title').text(data[i].name);
         petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.pet-breed').text(data[i].breed);
-        petTemplate.find('.pet-age').text(data[i].age);
-        petTemplate.find('.pet-location').text(data[i].location);
         petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        petTemplate.find('.pet-price').text(data[i].price);
+        petTemplate.find('.pet-num').text(data[i].num);
 
         petsRow.append(petTemplate.html());
       }
@@ -73,11 +71,19 @@ web3 = new Web3(App.web3Provider);
       console.log(err.message);
     });
   },
+
+  getPrices: async function(){
+    return $.getJSON('../pets.json');
+  },
   
-  handleAdopt: function(event) {
+  handleAdopt: async function(event) {
+
     event.preventDefault();
 
     var petId = parseInt($(event.target).data('id'));
+    let pets = await App.getPrices();
+    let pet = pets.find((price) => price.id == petId);
+    var petValue = pet.price;
 
     var adoptionInstance;
     web3.eth.getAccounts(function(error, accounts) {
@@ -87,7 +93,7 @@ web3 = new Web3(App.web3Provider);
       var account = accounts[0];
       App.contracts.Adoption.deployed().then(function(instance) {
         adoptionInstance = instance;
-        return adoptionInstance.adopt(petId, { value:web3.toWei(5.5, 'ether'), from: account });
+        return adoptionInstance.adopt(petId, { value:web3.toWei(petValue, 'ether'), from: account });
       }).then(function(result) {
         return App.markAdopted();
       }).catch(function(err) {
